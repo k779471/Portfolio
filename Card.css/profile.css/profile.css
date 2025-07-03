@@ -1,0 +1,215 @@
+/* profile.css */
+
+/* Reset & Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+header img {
+  object-fit: cover;
+  border: 2px solid #007bff;
+}
+
+.nav-link {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #007bff;
+}
+
+#home {
+  background-color: #e9ecef;
+}
+
+#home h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#home .lead {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.2rem;
+}
+
+#home .btn-primary {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 25px;
+}
+
+
+.carousel-inner img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  #home h2 {
+    font-size: 2rem;
+  }
+
+  #home .lead {
+    font-size: 1rem;
+  }
+}
+
+#about {
+  background-color: #ffffff;
+  color: #333;
+}
+
+#about h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+#about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+#skills {
+  background-color: #f8f9fa;
+}
+
+#skills h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  position: relative;
+}
+
+#skills h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+}
+
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+#projects h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+#projects h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+}
+
+.card-title {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+.btn-sm {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+}
+#contact {
+  background-color: #f9f9f9;
+}
+
+#contact h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+  border-radius: 0.375rem;
+  box-shadow: none;
+}
+
+#contact-form button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+footer {
+  border-top: 1px solid #555;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
+  color: #0d6efd; 
+}
